@@ -1,10 +1,18 @@
 # 🔐 VPN IPSec IKEv1 Site-to-Site Punto a Punto Basada en Enrutamiento
 
 > **Institución:** ITLA
-> **Estudiante:** Junior Javier Santos Perez  
-> **Matrícula:** 2024-1599  
-> **Tipo de Configuración:** VPN Site-to-Site con IPSec IKEv1 basada en enrutamiento (Route-Based VPN)  
+> 
+> **Estudiante:** Junior Javier Santos Perez
+> 
+> **Matrícula:** 2024-1599
+> 
+> **Tipo de Configuración:** VPN Site-to-Site con IPSec IKEv1 basada en enrutamiento (Route-Based VPN)
+> 
 > **Plataforma:** Cisco IOS (Routers Cisco)
+>
+> Video demostrativo:
+>
+> Link GitHub:
 
 ---
 
