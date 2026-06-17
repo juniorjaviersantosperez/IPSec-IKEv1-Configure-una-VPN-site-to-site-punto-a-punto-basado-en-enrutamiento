@@ -441,7 +441,7 @@ crypto ipsec profile VPN-PROFILE
 
 ## 📊 Pruebas de Conectividad
 
-### Test 1: Ping desde VPC9 a Linux6
+### Test 1: Ping desde VPC9 a VPC8
 
 ![VPC9 haciendo ping a 10.15.99.3 (Linux6)](Imagenes/IMAGEN11.png)
 *Figura 13 — Prueba exitosa de conectividad entre Sitio 1 y Sitio 2*
@@ -461,7 +461,7 @@ VPCS1> ping 10.15.99.3
 
 **Resultado:** ✅ **EXITOSO** — Todos los paquetes llegaron (0% pérdida)
 
-### Test 2: Ping desde VPC8 a Linux7
+### Test 2: Ping desde VPC8 a VPC9
 
 ![VPC8 haciendo ping a 192.168.99.3 (Linux7)](Imagenes/IMAGEN12.png)
 *Figura 14 — Prueba inversa de conectividad*
