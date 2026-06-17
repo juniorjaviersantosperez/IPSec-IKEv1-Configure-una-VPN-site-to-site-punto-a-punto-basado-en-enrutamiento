@@ -1,4 +1,4 @@
-# 🔐 VPN IPSec IKEv1 Site-to-Site Punto a Punto Basada en Enrutamiento
+#  VPN IPSec IKEv1 Site-to-Site Punto a Punto Basada en Enrutamiento
 
 > **Institución:** ITLA
 > 
@@ -16,7 +16,7 @@
 
 ---
 
-## 📋 Tabla de Contenidos
+##  Tabla de Contenidos
 
 1. [Objetivo](#objetivo)
 2. [Topología de Red](#topología-de-red)
@@ -32,7 +32,7 @@
 
 ---
 
-## 🎯 Objetivo
+## Objetivo
 
 Establecer una **VPN segura site-to-site** entre dos sitios remotos (Sitio 1 y Sitio 2) utilizando **IPSec con IKEv1**, permitiendo que los dispositivos en cada sitio se comuniquen de forma cifrada a través de una red pública (Internet). La VPN se configura con **enrutamiento dinámico basado en túneles** (Route-Based VPN), proporcionando:
 
@@ -43,7 +43,7 @@ Establecer una **VPN segura site-to-site** entre dos sitios remotos (Sitio 1 y S
 
 ---
 
-## 📐 Topología de Red
+## Topología de Red
 
 ![Topología de la VPN IPSec IKEv1](Imagenes/IMAGEN1.png)
 *Figura 1 — Topología de red completa: Sitio 1 (izquierda) y Sitio 2 (derecha) conectados a través de una VPN IPSec*
@@ -104,7 +104,7 @@ Establecer una **VPN segura site-to-site** entre dos sitios remotos (Sitio 1 y S
 
 ---
 
-## 🔢 Direccionamiento IP
+## Direccionamiento IP
 
 ### Red Pública (WAN) — Internet
 
@@ -192,7 +192,7 @@ interface Ethernet0/1
 
 ---
 
-## 🔐 Parámetros de Seguridad IPSec
+##  Parámetros de Seguridad IPSec
 
 ### Fase 1 (IKEv1) — Intercambio de claves y autenticación
 
@@ -218,7 +218,7 @@ interface Ethernet0/1
 
 ---
 
-## 🔑 Configuración IKEv1
+##  Configuración IKEv1
 
 ### Política IKEv1
 
@@ -254,7 +254,7 @@ crypto isakmp key cisco address 200.1.15.2
 
 ---
 
-## 🛡️ Configuración IPSec
+##  Configuración IPSec
 
 ### Transform Set (Conjunto de transformaciones)
 
@@ -286,7 +286,7 @@ tunnel protection ipsec profile VPN-PROFILE
 
 ---
 
-## 🚇 Tunnel Interface
+##  Tunnel Interface
 
 ### Características de Tunnel10
 
@@ -315,7 +315,7 @@ interface Tunnel10
 
 ---
 
-## 🗺️ Enrutamiento Estático
+##  Enrutamiento Estático
 
 ### Tabla de enrutamiento R2 (Sitio 1)
 
@@ -342,7 +342,7 @@ ip route 10.15.99.0 255.255.255.0 172.16.1.1   ← Tráfico a Sitio 1 por túnel
 
 ---
 
-## ✅ Verificación y Pruebas
+##  Verificación y Pruebas
 
 ### Estado de IPSec SA (Security Association)
 
@@ -447,7 +447,7 @@ crypto ipsec profile VPN-PROFILE
 
 ---
 
-## 📊 Pruebas de Conectividad
+## Pruebas de Conectividad
 
 ### Test 1: Ping desde VPC9 a VPC8
 
@@ -467,7 +467,7 @@ VPCS1> ping 10.15.99.3
 84 bytes from 10.15.99.3 icmp_seq=5 ttl=62 time=1.112 ms
 ```
 
-**Resultado:** ✅ **EXITOSO** — Todos los paquetes llegaron (0% pérdida)
+**Resultado:**  **EXITOSO** — Todos los paquetes llegaron (0% pérdida)
 
 ### Test 2: Ping desde VPC8 a VPC9
 
@@ -482,11 +482,11 @@ VPCS> ping 192.168.99.3
 84 bytes from 192.168.99.3 icmp_seq=4 ttl=62 time=10.998 ms
 ```
 
-**Resultado:** ✅ **EXITOSO** — Todos los paquetes llegaron (0% pérdida)
+**Resultado:**  **EXITOSO** — Todos los paquetes llegaron (0% pérdida)
 
 ---
 
-## 🎯 Resultados
+##  Resultados
 
 ### Análisis de Rendimiento
 
@@ -503,7 +503,7 @@ VPCS> ping 192.168.99.3
 
 ### Conclusiones
 
-✅ **La VPN IPSec IKEv1 se configuró exitosamente** con los siguientes logros:
+ **La VPN IPSec IKEv1 se configuró exitosamente** con los siguientes logros:
 
 1. **Autenticación IKEv1 completada** — Fase 1 establecida con PSK
 2. **Túnel IPSec activo** — Fase 2 negociada y SAs establecidas en ambas direcciones
@@ -522,9 +522,8 @@ Algoritmo de cifrado: AES-128 bits
 Autenticación:        HMAC-SHA
 Intercambio de claves: Diffie-Hellman Group 2 (1024 bits)
 Modo de operación:    Tunnel Mode (encapsula IP headers)
-Estado:               OPERATIVO ✅
+Estado:               OPERATIVO 
 ```
 
 ---
 
-> **Nota:** Esta documentación se generó para la asignatura de Redes de Computadoras en PNET. La configuración fue validada en ambiente de laboratorio virtual y se verificó exitosamente mediante pruebas de ping entre las redes privadas a través del túnel IPSec.
