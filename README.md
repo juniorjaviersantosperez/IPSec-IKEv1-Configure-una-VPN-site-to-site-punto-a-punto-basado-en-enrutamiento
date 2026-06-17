@@ -10,9 +10,9 @@
 > 
 > **Plataforma:** Cisco IOS (Routers Cisco)
 >
-> Video demostrativo:
+> **Video demostrativo:**
 >
-> Link GitHub:
+> **Link GitHub:**
 
 ---
 
