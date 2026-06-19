@@ -10,9 +10,13 @@
 > 
 > **Plataforma:** Cisco IOS (Routers Cisco)
 >
-> **Video demostrativo:**
->
-> **Link GitHub:**
+
+
+Video demostrativo: https://www.youtube.com/watch?v=aS0i8hzKFxc 
+
+
+Repositorio GitHub: https://github.com/juniorjaviersantosperez/VPN-IPSec-IKEv1-Site-to-Site-Punto-a-Punto-Basada-en-Enrutamiento.git 
+
 
 ---
 
